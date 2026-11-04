@@ -41,7 +41,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--glow); outline-
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--night); }
 .nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
 .brand { display: flex; align-items: center; gap: 10px; font: 700 17px/1 var(--display); text-decoration: none; }
-.brand i { width: 26px; height: 26px; border-radius: 8px; background: conic-gradient(from 200deg, #f5a54a, #f472b6, #34d399, #60a5fa, #f5a54a); display: inline-block; }
+.brand i { width: 26px; height: 26px; border-radius: 6px; background: url(/assets/icon.svg) center / cover no-repeat; display: inline-block; }
 .nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; font-size: 15px; }
 .nav ul a { text-decoration: none; color: var(--night-muted); }
 .nav ul a:hover { color: var(--night-ink); }

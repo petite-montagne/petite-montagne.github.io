@@ -21,7 +21,7 @@ export default {
   },
 
   home: {
-    title: 'tweetyboopdev · Développement mobile et full-stack',
+    title: 'Petite Montagne · Développement mobile et full-stack',
     description: 'Applications mobiles hors ligne d’abord, logiciels familiaux auto-hébergés, outils pour livres numériques et modules pour écran intelligent. Des logiciels que de vraies familles utilisent tous les jours.',
     eyebrow: 'Développement mobile et full-stack',
     headline: 'Des logiciels que de vraies familles <em>utilisent tous les jours</em>.',

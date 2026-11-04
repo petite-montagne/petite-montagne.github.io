@@ -20,7 +20,7 @@ export default {
   },
 
   home: {
-    title: 'tweetyboopdev · Mobile & full-stack developer',
+    title: 'Petite Montagne · Mobile & full-stack developer',
     description: 'Offline-first mobile apps, self-hosted family software, e-book tooling and smart-display plugins. Software real households use every day.',
     eyebrow: 'Mobile &amp; full-stack developer',
     headline: 'Software that real households <em>use every day</em>.',

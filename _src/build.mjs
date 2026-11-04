@@ -6,7 +6,7 @@ import en from './content/en.mjs';
 import fr from './content/fr.mjs';
 import { site } from './content/site.mjs';
 
-const ORIGIN = 'https://tweetyboopdev2022-code.github.io';
+const ORIGIN = 'https://petite-montagne.github.io';
 const LANGS = { en: { c: en, base: '/' }, fr: { c: fr, base: '/fr/' } };
 const SLUGS = en.cases.map((k) => k.slug);
 
@@ -31,7 +31,7 @@ function head({ lang, title, description, path, altPath }) {
 <link rel="alternate" hreflang="${LANGS[other(lang)].c.htmlLang}" href="${ORIGIN}${altPath}">
 <link rel="alternate" hreflang="x-default" href="${ORIGIN}${lang === 'en' ? path : altPath}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="tweetyboopdev">
+<meta property="og:site_name" content="Petite Montagne">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${ORIGIN}${path}">
@@ -59,13 +59,13 @@ function nav(lang, altPath, onHome) {
   return html`
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="${onHome ? '#top' : homeOf(lang)}"><i aria-hidden="true"></i>tweetyboopdev</a>
+    <a class="brand" href="${onHome ? '#top' : homeOf(lang)}"><i aria-hidden="true"></i>Petite Montagne</a>
     <ul>
       <li><a href="${h}#work">${c.nav.work}</a></li>
       <li><a href="${h}#cases">${c.nav.cases}</a></li>
       <li><a href="${h}#skills">${c.nav.skills}</a></li>
       ${site.resume ? html`<li><a href="${site.resume[lang] ?? site.resume.en}">${c.nav.resume}</a></li>` : ''}
-      <li><a href="https://github.com/tweetyboopdev2022-code">GitHub ↗</a></li>
+      <li><a href="https://github.com/petite-montagne">GitHub ↗</a></li>
       <li><a class="lang" href="${altPath}" hreflang="${LANGS[other(lang)].c.htmlLang}" lang="${LANGS[other(lang)].c.htmlLang}" aria-label="${c.nav.switchLabel}">${c.nav.switchTo}</a></li>
     </ul>
   </div>
@@ -76,7 +76,7 @@ function nav(lang, altPath, onHome) {
 function contactBand(lang) {
   const c = LANGS[lang].c;
   const mail = site.email ? html`<a class="btn primary" href="mailto:${site.email}">${c.contact.email}</a>` : '';
-  const gh = html`<a class="btn ${site.email ? 'ghost' : 'primary'}" href="https://github.com/tweetyboopdev2022-code">${site.email ? 'GitHub ↗' : c.contact.github}</a>`;
+  const gh = html`<a class="btn ${site.email ? 'ghost' : 'primary'}" href="https://github.com/petite-montagne">${site.email ? 'GitHub ↗' : c.contact.github}</a>`;
   const cv = site.resume ? html`<a class="btn ghost" href="${site.resume[lang] ?? site.resume.en}">${c.contact.resume}</a>` : '';
   return html`
 <section class="contact" aria-labelledby="contact-h">
@@ -90,7 +90,7 @@ function contactBand(lang) {
 </section>
 <footer>
   <div class="wrap">
-    <span>© 2026 tweetyboopdev</span>
+    <span>© 2026 Petite Montagne</span>
     <span><a href="/wallhub/">WallHub</a> · <a href="/wallhub/privacy.html">${c.footer.privacy}</a> · <a href="/wallhub/terms.html">${c.footer.terms}</a></span>
   </div>
 </footer>
@@ -158,7 +158,7 @@ function home(lang) {
           <p>${h.projects.epubkit.body}</p>
           <p class="metric">${h.projects.epubkit.metric}</p>
           ${tags(['Python', 'lxml', 'EPUBCheck', 'PyMuPDF', h.projects.epubkit.llm])}
-          <div class="links"><a href="https://github.com/tweetyboopdev2022-code/epubkit">${h.viewCode}</a></div>
+          <div class="links"><a href="https://github.com/petite-montagne/epubkit">${h.viewCode}</a></div>
         </div>
       </article>
 
@@ -168,7 +168,7 @@ function home(lang) {
           <h3>RecapMod</h3>
           <p>${h.projects.recapmod.body}</p>
           ${tags(['C++', 'Qt', 'NickelHook'])}
-          <div class="links"><a href="https://github.com/tweetyboopdev2022-code/RecapMod">${h.viewCode}</a></div>
+          <div class="links"><a href="https://github.com/petite-montagne/RecapMod">${h.viewCode}</a></div>
         </div>
       </article>
 
@@ -178,7 +178,7 @@ function home(lang) {
           <h3>${h.projects.hs.title}</h3>
           <p>${h.projects.hs.body}</p>
           ${tags(['React', 'TypeScript', 'Vite', 'Vitest'])}
-          <div class="links"><a href="https://github.com/tweetyboopdev2022-code/home-screens-plugins">${h.viewCode}</a><a href="https://tweetyboopdev2022-code.github.io/home-screens-plugins/">${h.projects.hs.wizard}</a></div>
+          <div class="links"><a href="https://github.com/petite-montagne/home-screens-plugins">${h.viewCode}</a><a href="https://petite-montagne.github.io/home-screens-plugins/">${h.projects.hs.wizard}</a></div>
         </div>
       </article>
 
@@ -190,7 +190,7 @@ function home(lang) {
           <h3>${h.projects.grimmory.title}</h3>
           <p>${h.projects.grimmory.body}</p>
           ${tags(['Python', 'SQLite', 'Web Push', 'nginx'])}
-          <div class="links"><a href="https://github.com/tweetyboopdev2022-code/grimmory-addons">${h.viewCode}</a></div>
+          <div class="links"><a href="https://github.com/petite-montagne/grimmory-addons">${h.viewCode}</a></div>
         </div>
       </article>
     </div>
@@ -260,7 +260,7 @@ function casePage(lang, k, i) {
   const altPath = caseUrl(other(lang), k.slug);
   const prev = c.cases[(i - 1 + c.cases.length) % c.cases.length];
   const next = c.cases[(i + 1) % c.cases.length];
-  return head({ lang, title: `${k.name} · ${c.labels.caseStudy} · tweetyboopdev`, description: k.tagline, path, altPath })
+  return head({ lang, title: `${k.name} · ${c.labels.caseStudy} · Petite Montagne`, description: k.tagline, path, altPath })
     + nav(lang, altPath, false)
     + html`
 <main>
