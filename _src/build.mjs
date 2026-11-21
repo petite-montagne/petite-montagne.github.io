@@ -162,6 +162,19 @@ function home(lang) {
         </div>
       </article>
 
+      <article class="proj feature">
+        <div class="art lib" aria-hidden="true">
+          <b>${h.projects.library.artTitle}</b>
+          ${h.projects.library.art.map(([t, pct, note]) => html`<div class="row"><span>${t}</span><em>${note}</em><i><u style="width:${pct}%"></u></i></div>`)}
+        </div>
+        <div class="body">
+          <span class="eyebrow">PWA · Web</span>
+          <h3>${h.projects.library.title}</h3>
+          <p>${h.projects.library.body}</p>
+          ${tags(['JavaScript', 'PWA', 'Service worker', 'REST API', 'Vanilla JS'])}
+        </div>
+      </article>
+
       <article class="proj">
         <div class="art audio" aria-hidden="true">
           <div class="player">

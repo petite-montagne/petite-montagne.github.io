@@ -51,6 +51,12 @@ export default {
         metric: 'Proven on a real 373-book library. The repair rules were each learned by breaking something first.',
         llm: 'Local LLMs',
       },
+      library: {
+        title: 'Library app',
+        art: [['The Silent Harbour', 72, '2 h 10 min left'], ['Wings of Fire #7', 35, 'on your Kobo'], ['Dune Messiah', 0, 'next in series']],
+        artTitle: 'Continue reading',
+        body: 'A faster, friendlier front end for a self-hosted book server. It covers shelves, series with the missing books, sending books to a Kobo, a wishlist, an EPUB reader that learns your reading pace, an audiobook player, and age-limited libraries for kids. Installs to the home screen, with no framework.',
+      },
       audiokit: {
         artTitle: 'The Long Road Home.m4b', artMeta: '14 MP3 parts → 1 book · 9 h 12 min · 252 MB',
         art: [['Chapter 1', '0:00'], ['Chapter 2', '38:41'], ['Chapter 3', '1:14:06'], ['Chapter 4', '1:52:30']],

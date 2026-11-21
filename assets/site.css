@@ -149,6 +149,13 @@ section.block { padding-block: 88px 24px; }
 .art.audio .ch { display: flex; font-size: 13px; padding: 4px 0; border-top: 1px solid rgba(255,255,255,.08); }
 .art.audio .ch em { margin-left: auto; font: 500 11px/1.6 var(--mono); font-style: normal; color: #d9a57e; }
 
+.art.lib { background: linear-gradient(135deg, #f3ead9, #e6d7bb); padding: 28px clamp(22px, 5vw, 56px); min-height: 280px; display: grid; gap: 10px; align-content: center; color: #2a2116; }
+.art.lib > b { font: 700 14px/1.2 var(--display); }
+.art.lib .row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; background: #fffaf0; border-radius: 10px; padding: 9px 12px; font-size: 13px; box-shadow: 0 6px 14px -10px rgba(60,40,10,.5); }
+.art.lib .row em { font: 500 11px/1.6 var(--mono); font-style: normal; color: #9a5b1c; }
+.art.lib .row i { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: #eadfca; overflow: hidden; }
+.art.lib .row u { display: block; height: 100%; background: #c8792b; }
+
 /* case studies */
 .cases { display: grid; gap: 18px; }
 .case { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 36px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; }

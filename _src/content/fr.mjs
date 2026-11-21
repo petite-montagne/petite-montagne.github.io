@@ -52,6 +52,12 @@ export default {
         metric: 'Éprouvé sur une vraie bibliothèque de 373 livres. Chaque règle de réparation est née d’un bris.',
         llm: 'LLM locaux',
       },
+      library: {
+        title: 'Appli Bibliothèque',
+        art: [['Le port silencieux', 72, 'encore 2 h 10'], ['Les Royaumes de Feu 7', 35, 'sur la Kobo'], ['Le Messie de Dune', 0, 'prochain tome']],
+        artTitle: 'Continuer la lecture',
+        body: 'Une interface plus rapide et plus conviviale pour un serveur de livres auto-hébergé : étagères, séries avec les tomes manquants, envoi à la Kobo, liste de souhaits, liseuse EPUB qui apprend votre rythme de lecture, lecteur de livres audio et bibliothèques limitées par âge pour les enfants. S’installe sur l’écran d’accueil, sans cadriciel.',
+      },
       audiokit: {
         artTitle: 'La longue route.m4b', artMeta: '14 parties MP3 → 1 livre · 9 h 12 min · 252 Mo',
         art: [['Chapitre 1', '0:00'], ['Chapitre 2', '38:41'], ['Chapitre 3', '1:14:06'], ['Chapitre 4', '1:52:30']],
