@@ -172,6 +172,7 @@ function home(lang) {
           <h3>${h.projects.library.title}</h3>
           <p>${h.projects.library.body}</p>
           ${tags(['JavaScript', 'PWA', 'Service worker', 'REST API', 'Vanilla JS'])}
+          <div class="links"><a href="https://github.com/petite-montagne/library-app">${h.viewCode}</a></div>
         </div>
       </article>
 
