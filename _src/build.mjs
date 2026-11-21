@@ -163,6 +163,22 @@ function home(lang) {
       </article>
 
       <article class="proj">
+        <div class="art audio" aria-hidden="true">
+          <div class="player">
+            <b>${h.projects.audiokit.artTitle}</b><small>${h.projects.audiokit.artMeta}</small>
+            <div class="wave">${Array.from({ length: 36 }, (_, i) => html`<i style="height:${18 + ((i * 47 + 13) % 71) + (i % 5 === 0 ? 10 : 0)}%"></i>`)}</div>
+            ${h.projects.audiokit.art.map(([t, at]) => html`<div class="ch"><span>${t}</span><em>${at}</em></div>`)}
+          </div>
+        </div>
+        <div class="body">
+          <h3>audiokit</h3>
+          <p>${h.projects.audiokit.body}</p>
+          ${tags(['Python', 'ffmpeg', 'AAC · M4B', 'Open Library', 'pytest'])}
+          <div class="links"><a href="https://github.com/petite-montagne/audiokit">${h.viewCode}</a></div>
+        </div>
+      </article>
+
+      <article class="proj">
         <div class="art recap" aria-hidden="true"><div class="page"><b>${h.projects.recapmod.artTitle}</b>${h.projects.recapmod.art}</div></div>
         <div class="body">
           <h3>RecapMod</h3>

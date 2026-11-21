@@ -51,6 +51,11 @@ export default {
         metric: 'Proven on a real 373-book library. The repair rules were each learned by breaking something first.',
         llm: 'Local LLMs',
       },
+      audiokit: {
+        artTitle: 'The Long Road Home.m4b', artMeta: '14 MP3 parts → 1 book · 9 h 12 min · 252 MB',
+        art: [['Chapter 1', '0:00'], ['Chapter 2', '38:41'], ['Chapter 3', '1:14:06'], ['Chapter 4', '1:52:30']],
+        body: 'The audiobook sister to epubkit. Point it at a folder of downloaded audiobooks and get back one clean .m4b per book: parts joined in the right order, chapters, tags and cover art, loudness evened out, about 28 MB an hour. A book that fails its own checks never reaches the library.',
+      },
       recapmod: {
         artTitle: "Who you've met", art: "Mara, the ferry pilot's daughter<br>Tobias, harbour master<br>Old Fen, who keeps the ledger",
         body: "A Kobo mod that adds a Recap button: when you last read, what happened, and who you've met so far. Never past your current page, fully offline.",

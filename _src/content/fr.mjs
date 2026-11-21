@@ -52,6 +52,11 @@ export default {
         metric: 'Éprouvé sur une vraie bibliothèque de 373 livres. Chaque règle de réparation est née d’un bris.',
         llm: 'LLM locaux',
       },
+      audiokit: {
+        artTitle: 'La longue route.m4b', artMeta: '14 parties MP3 → 1 livre · 9 h 12 min · 252 Mo',
+        art: [['Chapitre 1', '0:00'], ['Chapitre 2', '38:41'], ['Chapitre 3', '1:14:06'], ['Chapitre 4', '1:52:30']],
+        body: 'Le pendant audio d’epubkit. On lui donne un dossier de livres audio téléchargés et on récupère un fichier .m4b propre par livre : parties jointes dans le bon ordre, chapitres, métadonnées et couverture, volume uniformisé, environ 28 Mo l’heure. Un livre qui échoue à ses propres vérifications n’entre jamais dans la bibliothèque.',
+      },
       recapmod: {
         artTitle: 'Personnages rencontrés', art: 'Mara, la fille du capitaine du traversier<br>Tobias, maître de port<br>Le vieux Fen, gardien du registre',
         body: 'Une modification pour Kobo qui ajoute un bouton Résumé : quand vous avez lu pour la dernière fois, ce qui s’est passé et qui vous avez rencontré. Jamais au-delà de la page courante, entièrement hors ligne.',
